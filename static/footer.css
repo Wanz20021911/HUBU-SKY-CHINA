@@ -1,0 +1,124 @@
+footer{
+    margin: 0px auto;
+    background: radial-gradient(circle, rgba(174,238,187,1) 0%, rgba(0,108,255,0.8998949921765581) 100%);
+    flex: 0 0 auto;
+    /* border: 1px solid blue; */
+    /* background-image: url(../img/wave（bottom）.png);
+    background: cover;
+    width: 100%; */
+}
+.bottom{
+    margin-top: 200px;
+    height: 200px;	
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid green; */
+
+}
+.bottom_left{
+    /*width: 100%;*/
+    flex-grow:4;
+    position: relative;
+    /* border: 1px solid red; */
+}
+.bottom_left>img{
+    width: 80px;
+    /* margin-top: -35px; */
+    position: absolute;
+    left: 42%;
+    z-index: 5;
+}
+.bottom_left>p{
+    margin-top: 60px;
+    padding: 10px 10px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0);
+	backdrop-filter: blur(5px);
+    border: #8492a6;
+}
+.bottom_center{
+    /*width: 100%;*/
+    flex-grow:4; 
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+    min-width: 40%;/*我也不知道为什么宽度容易改变，但是设置最小宽度就解决了*/
+    
+}
+.bottom_center>div{
+    /* border: 1px solid red; */
+}
+.bottom_left>p,.bottom_center>div>ul>li,.bottom_right>section{
+    /* border: 1px solid red; */
+    font-size: 12px;
+    font-family: "Microsoft YaHei";
+    font-weight:bolder;
+    color: rgba(85, 85, 127, 0.57)	
+}
+.bottom_center>div>ul>li{
+    margin-top: 6px;
+}
+.bottom_left>p{
+    text-indent: 2rem;
+}
+.bottom_right{
+    /*width: 100%;*/
+    flex-grow:1;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+    /* height: 100px;
+    line-height: 100px; */
+}
+/* .bottom_right1{
+    height: 100px;
+    line-height: 124.8px;
+} */
+.bottom_right1>img{
+    height: 90px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.bottom_right2>img{
+    height: 124.8px;
+}
+.bottom_right1>section,.bottom_right2>section{
+    text-align: center;
+    bottom: 0;
+}
+
+.footer_bottom{
+    width: 80%;
+    height: 20px;
+    margin: 0px auto;
+    
+    /* border: 1px solid red; */
+    text-align: center;
+}
+.bottom_center a{
+    color: rgba(85, 85, 127, 0.57)	;
+}
+.bottom_bg{
+    position: absolute;
+    width: 100%;
+    margin-top: -370px;
+    z-index: -1;
+}
+.fab{
+    position: fixed;
+    direction: ltr;
+    right: 2.22222222vw;
+    bottom: 1.66666667vw;
+    z-index: 2500;
+    width: 48px;
+    height: 48px;
+    font-size: 0;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 50%;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility .1s .2s,opacity .2s cubic-bezier(0.4, 0, 0.2, 1);
+}
