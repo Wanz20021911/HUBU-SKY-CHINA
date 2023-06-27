@@ -8,10 +8,13 @@
     <link rel="license" href="https://creativecommons.org/licenses/by/4.0/"/>
 
     <!-- Bootstrap CSS -->
-    <link href="{{ url_for('static', filename = 'bootstrap.min.css') }}" rel="stylesheet">
+    <!-- <link href="{{ url_for('static', filename = 'bootstrap.min.css') }}" rel="stylesheet"> -->
 
     <!-- Custom CSS -->
-    <link href="{{ url_for('static', filename = 'style.css') }}" rel="stylesheet">
+    <!-- <link href="{{ url_for('static', filename = 'style.css') }}" rel="stylesheet"> -->
+    <link href="{{ url_for('static', filename = 'nav.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename = 'content_article.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename = 'footer.css') }}" rel="stylesheet">
 
     <title>{% block title %}{% endblock %} | HUBU-SKY-China - iGEM 2023</title>
 
@@ -41,6 +44,34 @@
   {% include 'footer.html' %}
 
   <!-- Bootstrap Bundle with Popper -->
-  <script src="{{ url_for('static', filename = 'bootstrap.bundle.min.js') }}"></script>
+  <!-- <script src="{{ url_for('static', filename = 'bootstrap.bundle.min.js') }}"></script> -->
+  <script>
+    window.addEventListener("scroll", function() {
+      var navbar = document.querySelector("nav");
+      navbar.classList.toggle("sticky",window.scrollY>50);
+
+    });
+    window.addEventListener('scroll', function() {
+      var contentLeft = document.querySelector('.content_left');
+      var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+
+      if (viewportWidth > 960) {
+        var scrollY = window.scrollY || window.pageYOffset;
+        var windowHeight = window.innerHeight; // 窗口可见区域的高度
+        var documentHeight = document.documentElement.scrollHeight; // 文档总高度
+
+        // 计算距离底部的距离
+        var distanceToBottom = documentHeight - (scrollY + windowHeight);
+
+        if (scrollY >= 50) {
+        contentLeft.classList.add('sticky');
+        } else {
+        contentLeft.classList.remove('sticky');
+        }
+      } else {
+        contentLeft.classList.remove('sticky');
+      }
+    });
+  </script>
 </body>
 </html>
