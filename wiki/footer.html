@@ -2,7 +2,7 @@
 <footer>
   <div class="bottom">
     <div class="bottom_left">
-      <img src="./img/logo1.svg">
+      <img src="{{ url_for('static', filename = 'img/logo1.svg') }}">
       <p>Our team values collaboration, creativity, and scientific excellence. We believe in the power of interdisciplinary approaches to problem-solving and actively foster an inclusive and supportive environment for all team members. Together, we strive to make meaningful contributions to the iGEM community and leave a lasting impact in the field of synthetic biology.</p>
     </div>
     <div class="bottom_center">
@@ -26,11 +26,11 @@
     </div>
     <div class="bottom_right">
       <div class="bottom_right1">
-        <img src="./img/igem_logo.svg"/>
+        <img src="{{ url_for('static', filename = 'img/igem_logo.svg') }}"/>
         <section>Organizer's Logo</section>
       </div>
       <div class="bottom_right2">
-        <img src="./img/吉祥物.png"/>
+        <img src="{{ url_for('static', filename = 'img/吉祥物.png') }}"/>
         <section>Our Mascot</section>
       </div>
     </div>
