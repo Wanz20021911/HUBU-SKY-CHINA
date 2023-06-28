@@ -47,16 +47,16 @@
 
       if (viewportWidth > 960) {
         var scrollY = window.scrollY || window.pageYOffset;
-        var windowHeight = window.innerHeight; // 窗口可见区域的高度
-        var documentHeight = document.documentElement.scrollHeight; // 文档总高度
+        // var windowHeight = window.innerHeight; // 窗口可见区域的高度
+        // var documentHeight = document.documentElement.scrollHeight; // 文档总高度
 
-        // 计算距离底部的距离
-        var distanceToBottom = documentHeight - (scrollY + windowHeight);
+        // // 计算距离底部的距离
+        // var distanceToBottom = documentHeight - (scrollY + windowHeight);
 
         if (scrollY >= 50) {
-        contentLeft.classList.add('sticky');
+          contentLeft.classList.add('sticky');
         } else {
-        contentLeft.classList.remove('sticky');
+          contentLeft.classList.remove('sticky');
         }
       } else {
         contentLeft.classList.remove('sticky');
