@@ -8,15 +8,15 @@
       <img src="{{ url_for('static', filename = 'img/logo1.svg') }}"></img>
     </div>
 
-    <!---- SMALL SCREEN MENU ICON ---->
+    <!-- -- SMALL SCREEN MENU ICON --
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-    </button>
+    </button> -->
 
     <div class="top_center">
       <ul>
         <!---- HOME ---->
-        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('pages', page='home')">Home</a></li>
 
         <!---- TEAM ---->
         <li>
@@ -81,7 +81,8 @@
     </div>
     <div class="pad">
       <div>
-        <i class="bi bi-blockquote-left"></i>
+        <!-- <i class="bi bi-blockquote-left"></i> -->
+        <img src="img/导航菜单.png"/>
         <div>
           <ul>
             <li><a href="">Home</a></li>
