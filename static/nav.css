@@ -19,7 +19,7 @@ header{
 
 nav{
     position: fixed;
-    width: 100%;
+    width: 80%;
     height: 60px;
     /*border: 1px solid greenyellow;*/
     display: flex;
@@ -37,15 +37,15 @@ nav{
     background-color:#fff;
     position:fixed;
 } */
-nav.sticky {
+header.sticky {
     position: fixed;
     background-color: white;
     box-shadow: 0 0 18px rgba(0, 0, 0, 0.2);
     animation: dropDown 0.5s ease-in-out forwards;
     
 }
-nav.sticky>div>ul>li>a,
-nav.sticky>div>ul>li>div>ul>li{
+header.sticky>nav>div>ul>li>a,
+header.sticky>nav>div>ul>li>div>ul>li{
     color: black;
 }
 /* 固定导航下滑动画 */
@@ -66,7 +66,7 @@ nav.sticky>div>ul>li>div>ul>li{
     height: 90px;
     z-index: 5;
     position: relative;
-    margin-left: 16vh;
+    /* margin-left: 16vh; */
     /* margin-right: 30px; */
 }
 .top_center{
@@ -156,14 +156,14 @@ nav.sticky>div>ul>li>div>ul>li{
     font-family: "Microsoft YaHei";
     font-weight:bolder;
 }
-.banner{
+/* .banner{
     position: absolute;
     width: 100%;
     height: 100vh;
-    background-size: cover;/*应该是覆盖整个容器*/
+    background-size: cover;应该是覆盖整个容器
     z-index: -1;
-    /* clip: rect(25px 0px 5px 0px); */
-}
+    clip: rect(25px 0px 5px 0px); 
+} */
 
 
 /*pc端*/
