@@ -1,14 +1,14 @@
 {% extends "layout.html" %}
   
 {% block title %}Project Description{% endblock %}
-<!-- {% block lead %}Describe how and why you chose your iGEM project.{% endblock %} -->
+{% block lead %}Describe how and why you chose your iGEM project.{% endblock %}
 
 {% block page_content %}
   <!-- Header -->
 <div class="screen">
   <div class="headline">
-    <h1 class="title">{{ self.title() }}</h1><br>
-    <p>{% block lead %}{% endblock %}</p>
+      <h1>Project Description</h1><br>
+      <p>Describe how and why you chose your iGEM project.<p>
   </div>
   <div class="banner"><img src="{{ url_for('static', filename = 'img/Description_cover1.png') }}"></div>
 </div>
