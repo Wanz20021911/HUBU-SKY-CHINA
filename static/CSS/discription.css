@@ -1,0 +1,9 @@
+#title p{
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1em 4em;
+    font-size: 3em;
+    font-family: "Microsoft YaHei";
+    font-weight:bolder;
+    text-align: center;
+}
