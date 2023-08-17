@@ -1,0 +1,471 @@
+body,ul,li,a{
+    margin: 0px;
+    padding: 0px;
+    list-style:none;
+    text-decoration: none;				
+}/*取消所有表格的格式*/
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;/*防止导航栏覆盖*/
+}
+body{
+    background-color: #ffffff;
+}
+/*头部样式*/
+header{
+    width: 100%;
+    height: 750px;
+    /*background-color: #fff;*/
+    margin-bottom: 20px;
+    /*box-shadow: 0px  5px 5px #ccc;/*模糊度5px 外延值5px*/
+    /* transform-style: inherit; */
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    /*border: 1px solid greenyellow;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 1s;
+    z-index: 100000;
+    padding: 10px 0px;
+}
+/* header>div>div{   /*等价于 .top>div*/
+    /*border: 1px solid darkred;
+} */
+/* nav.sticky{
+    padding: 5px 100px;
+    background-color:#fff;
+    position:fixed;
+} */
+nav.sticky {
+    position: fixed;
+    background-color: white;
+    box-shadow: 0px  5px 5px #ccc;
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.2);
+    animation: dropDown 0.5s ease-in-out forwards;
+    
+}
+nav.sticky>div>ul>li>a,
+nav.sticky>div>ul>li>div>ul>li{
+    color: black;
+}
+/* 固定导航下滑动画 */
+@keyframes dropDown {
+	from {
+		transform: translateY(-100px);
+	}
+
+	to {
+		transform: translateY(0);
+	}
+}
+
+.top_logo{
+    flex-grow: 1;
+}
+.top_logo>img{
+    height: 90px;
+    z-index: 5;
+    position: relative;
+    margin-left: 16vh;
+    transform: scale(0.8);
+    /* margin-right: 30px; */
+}
+.top_center{
+    flex-grow: 8;
+}
+.top_center>ul{/*同样的效果*/
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 10%;
+    transition:all .4s ease-in-out;
+    
+}
+.top_center>ul>li{
+    float: left;
+    position:relative;/*相对定位*/
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    width: 135px;
+    /* transition:all 1s ease-in-out;  */
+    padding: 10px 0;
+    
+}
+.top_center>ul>li>a{
+    color: rgb(0, 0, 0);/*alpha是 rgba() 中的 a 值 [r: 红色, g: 绿色, b: 蓝色, a: alpha值]，rgb 的取值范围在 0~255 之间，a 的取值范围在 0~1 之间(可以是小数). 其中a值规定色彩的透明度：0; 完全不透明, 0.5: 半透明, 1: 完全透明*/
+    font-family: "Microsoft YaHei";
+    font-weight:bolder;
+    /* padding: 10px; */
+    /* transition:all 1s ease-in-out; */
+    font-size: 14px;
+    width:100%;
+    margin: 2px auto;
+    display: block;
+}
+
+@keyframes bounce {
+	from {
+		transform: translateY(0);
+	}
+
+	to {
+		transform: translateY(-5px);
+	}
+}
+a:hover{
+    animation: bounce 0.2s ease-in-out;
+}
+/* .top_center>ul>li>a:hover {
+    animation: bounce 0.5s ease-in-out;
+} */
+
+#arrows{
+    height: 12px;
+    line-height: 25px;
+    text-align: center;
+    /* padding-left: 100px; */
+}
+.top_center>ul>li:hover>a>img{ /*通过改变hover的层级控制*/
+    transform: rotate(45deg);
+}
+
+/* .top_center>ul>li>a{
+    width:100%;
+    margin: 0 auto;
+} */
+
+
+.top_center>ul>li:nth-child(1):hover,.top_center>ul>li:nth-child(4):hover,.top_center>ul>li:nth-child(5):hover{
+    /* transition: all 1s ease-in-out; */
+    /* transform: scale(1.05); */
+    /* transition: all 0.5s ease-in-out; */
+    animation: bounce 0.2s ease-in-out;
+}
+.top_center>ul>li>div{
+    /* transition: all 0.5s ease-in-out; */
+    display: none;
+    /*border: 2px solid red;*/
+    position:absolute;/*固定位置，防止挤掉上面的*/
+    width: 150px;
+    background-color: #ffffff4e;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    opacity:0;
+    transition:all 0.3s ease-in-out;
+    /* padding-top: 10px; */
+}
+.top_center>ul>li:hover>div{
+    /*border: 1px solid red;*/
+    transition: all .5s;
+    transition-delay: 2s;
+    display: block;
+    z-index: 1;/*显示在最上层*/
+    opacity:1;
+    /* -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;*/
+    transition: all 0.2s ease-in-out;
+     
+}
+
+
+.dropdown-content{
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.525);
+	backdrop-filter: blur(5px);
+    transition:all 1s ease-in-out;
+    
+    /* left:45px; */
+}
+/*.top_center>ul>li:hover>div{
+    display: block;可伸缩
+}*/
+
+.top_center>ul>li>div>ul>li{
+
+    text-align: center;/*水平居中*/
+    line-height: 40px;
+    height: 40px;
+    /* width: 80%; */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    /* padding:0px -10px; */
+    font-size: 14px;
+    /* padding-left: 50px; */
+    letter-spacing: normal;
+}
+.top_center>ul>li>div>ul>li:hover{
+    background-color: #00d0ff1c;
+    color: #0475df;
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    margin: 5px 5px;    
+}
+/* .top_center>ul>li>div>ul>li{把a当作一个伸缩盒，问题解释见网页设计问题T10
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} */
+.top_center>ul>li>div>ul>li>a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+#title{
+    position: absolute;
+    margin-top:15vh;
+    width: 100%;
+    
+}
+#title>p{
+    font-size: 5em;
+    color: #fff;
+    /*background: rgba(0, 0, 0, 0.526);*/
+    font-family: "Microsoft YaHei";
+    font-weight:bolder;
+    position: relative;
+    text-align: center;
+}
+/*header::before*/
+.banner{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/Description_cover1.png);
+    background-size: cover;/*应该是覆盖整个容器*/
+    z-index: -1;
+    /* clip: rect(25px 0px 5px 0px); */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /*核心实现视差效果*/
+    transform: translateZ(-1px);
+}
+
+
+/*pc端*/
+@media screen and (min-width:960px){
+    .top{
+        min-width:960px;
+    }
+    .pad{
+        display: none;
+    }
+}
+
+/*pad端*/
+@media screen and (max-width:960px) and (min-width:750px){
+    .top_center,.top_right{
+        display: none;/*隐藏*/
+        min-width:700px;
+    }
+    .pad{
+        line-height: 55px;
+        height: 55px;
+        color: #8492a6;
+    }
+    /*.pad>div>img{
+        padding-top: 10px;
+        border: 1px solid red;
+    }*/
+    .pad>div>div{
+        width: 100%;
+        margin:0px auto;
+        height: 300px;
+        background-color: #fff;
+        position: absolute;
+        left: 0px;
+        display: none;
+        z-index: 1;/*显示在最上层*/
+        
+        /*border: 1px solid red;*/
+    }
+    .pad>div:hover>div{
+        display: block;/*先隐藏*//*以后用点击事件*/
+    }
+    .pad>div>div>ul{
+        width: 60%;
+        margin:0px auto;
+        /*border: 1px solid red;*/
+    }
+    .nav{
+        min-width:700px;
+    }
+    .nav>ul{
+        flex-wrap:wrap;
+    }
+    #start{
+        margin-left: 15px;
+        
+    }
+    #content{
+        height: 980px;
+        
+    }
+    .content{
+        min-width: 250px;
+        flex-wrap: wrap;
+        /* justify-content: space-around; */
+        border: 1px solid aqua;
+        margin-bottom: 0px;
+        
+    }
+    .content>div{
+        /* width: 45%; */
+        margin-bottom: 20px;
+        /* height: 230px; */
+        flex: 0 0 auto;
+    }
+    .content_left{
+        /* position: sticky;
+        margin: 0px;
+        padding: 10px;
+        top: 200px;
+        flex: 0 0 auto; */
+        /* width: 16.7%; */
+        min-width: 100%;
+        width: 90%;
+        margin: 16px 0px!important;
+    }
+    .content_right{
+        min-width: 100%;
+        width: 90%;
+    }
+    footer{
+        height: 250px;
+    }
+    .bottom{
+        height: 220px;
+    }
+    .bottom_left>img{
+        margin-top: -25px;
+    }
+    .bottom_left>p{
+        margin-top:30px;
+    }
+}
+/*移动端*/
+@media screen and (max-width:750px){
+    .top_center,.top_right{
+        display: none;/*隐藏*/
+    }
+    .pad{
+        display: block;
+        line-height: 55px;
+        height: 55px;
+        color: #8492a6;
+    }
+    .pad>div>div{
+        width: 100%;
+        margin:0px auto;
+        height: 300px;
+        background-color: #fff;
+        position: absolute;
+        left: 0px;
+        z-index: 1;
+        display: none;/*先隐藏*/
+    }
+    .pad>div:hover>div{
+        display: block;/*以后用点击事件*/
+    }
+    .pad>div>div>ul{
+        width: 60%;
+        margin:0px auto;
+        /*border: 1px solid red;*/
+    }
+    nav{/*ps:nav没有·*/
+        min-width:200px;
+        height: 115px;
+    }
+    nav>ul{
+        flex-wrap:wrap;
+        margin-left: 5px;
+    }
+    nav>ul>li{/*缩到最小时的临界*/
+        width: 25%;
+        padding: 8px 0px;
+        text-align: center;
+    }
+    #start{
+        padding: 8px 0px;
+        margin-left: 8px;
+        margin-top: 3px;
+    }
+    #content{
+        height: 1900px;
+        
+    }
+    .content{
+        /*min-width: 250px;*/
+        flex-wrap: wrap;
+        justify-content: space-around;
+        border: 1px solid aqua;
+        margin-bottom: 0px;
+        
+    }
+    .content>div{
+        min-width: 100%;
+        width: 90%;
+        /* height: 220px; */
+        flex: 0 0 auto;
+        margin-bottom: 20px;
+        
+    }
+
+    footer{
+        height: 645px;
+    }
+    .bottom{
+        flex-wrap:wrap;
+        height: 620px;
+    }
+    .bottom_left>img{
+        margin-top: -20px;
+    }
+    .bottom_left>p{
+        margin-top:18px
+    }
+    
+}
+
+  /*****************************************
+                Navigation
+   *****************************************/
+  
+   /* .dropdown-menu {
+    background-color: var(--turquoise);
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top center;
+    border-radius: 0;
+    border-color: white;
+    border-width: 1px;
+  }
+  
+  .dropdown-item:hover {
+    background-color: var(--violet);
+    color: var(--darkBlue);
+  }
+  
+  @keyframes growDown {
+    0% {
+      transform: scaleY(0)
+    }
+  
+    80% {
+      transform: scaleY(1.1)
+    }
+  
+    100% {
+      transform: scaleY(1)
+    }
+  
+  } */
