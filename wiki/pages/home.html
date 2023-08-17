@@ -13,7 +13,7 @@
         <p>Welcome to HUBU-SKY</p>
     </div>
     <div class="video-container">
-        <video src="./video/11.mp4" id="video-slider" loop autoplay muted></video>
+        <video src={{ url_for('static', filename = 'video/11.mp4') }} id="video-slider" loop autoplay muted></video>
     </div>
 
 </section>
@@ -49,12 +49,12 @@
             <p>In the mid-19th century, the global population grew at a high speed, from <b style="color: #ff8e3a;">2.52 billion</b> in 1950 to <b style="color: #ff8e3a;">7.79 billion</b> in 2020.</p>
         </div>
         <div class="introduction_figure">
-            <img src="./img/Home/population.svg" alt="figure"/>
+            <img src={{ url_for('static', filename = 'img/home/population.svg') }} alt="figure"/>
         </div>
     </div>
     <div class="introduction">
         <div class="introduction_figure">
-            <img src="./img/Home/food.svg" alt="figure"/>
+            <img src={{ url_for('static', filename = 'img/home/food.svg') }} alt="figure"/>
         </div>
         <div class="introduction_character">
             <h4 style="text-align:right;">Great Thirst for Food</h4>
@@ -69,7 +69,7 @@
             <br><b style="color: #ff8e3a; font-size: 20px;">Therefore, coming up with some effective solutions to reduce the usage of fertilizer is particularly important for the sustainable development of agriculture.</b></p>
         </div>
         <div class="introduction_figure">
-            <img src="./img/Home/Environment.svg" alt="figure"/>
+            <img src={{ url_for('static', filename = 'img/home/Environment.svg') }} alt="figure"/>
         </div>
     </div>
     <div class="introduction">
@@ -115,7 +115,7 @@
         <div class="introduction" id="plan_con">
             <div class="introduction_plan">
                 <div class="plan_figure">
-                    <img src="./img/Home/Plan1.svg" alt="figure"/>
+                    <img src={{ url_for('static', filename = 'img/home/problem.svg') }} alt="figure"/>
                 </div>
                 <div class="plan_character">
                     <p>With the effect of <b style="color: #ff8e3a;">ADH,FALDH and FDH</b>, methanol can be decomposed into carbon dioxide and convert NAD+ into NADH. Then, <b style="color: #ff8e3a;">HydABC</b> utilizes NADH to produce hydrogen and achieve the regeneration of NAD+. </p>
@@ -139,7 +139,7 @@
             <p>Want to know more about the details? Just click on the link below and take a look!</>
         </div>
         <div class="introduction_figure" id="mei">
-            <img src="./img/Home/酶树.svg" alt="figure"/>
+            <img src={{ url_for('static', filename = 'img/home/酶树.svg') }} alt="figure"/>
         </div>
     </div>
 </section>
@@ -156,19 +156,19 @@
     </h1>
     <div class="box-container">
         <div class="box">
-            <img src="./img/pet/ADH.svg"/>
+            <img src={{ url_for('static', filename = 'img/pet/ADH.svg') }}/>
             <h3>affordable hotels</h3>
         </div>
         <div class="box">
-            <img src="./img/pet/FALDH.svg"/>
+            <img src={{ url_for('static', filename = 'img/pet/FALDH.svg') }}/>
             <h3>food and drinks</h3>
         </div>
         <div class="box">
-            <img src="./img/pet/FDH.svg"/>
+            <img src={{ url_for('static', filename = 'img/pet/FDH.svg') }}/>
             <h3>safty guide</h3>
         </div>
         <div class="box">
-            <img src="./img/pet/HydABC.svg"/>
+            <img src={{ url_for('static', filename = 'img/pet/HydABC.svg') }}/>
             <h3>around the world</h3>
         </div>
     </div>
@@ -186,7 +186,7 @@
     <div id="video">
         <div>
             <video controls>
-                <source src="C:/Users/WAN铮Jerry/Pictures/Wallpaper/11.mp4" type="video/mp4">
+                <source src={{ url_for('static', filename = 'video/11.mp4') }} type="video/mp4">
             </video>
         </div>
     </div>
