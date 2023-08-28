@@ -6,6 +6,8 @@ body,ul,li,a{
 }/*取消所有表格的格式*/
 body{
     background-color: #ffffff;
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;/*防止导航栏覆盖*/
 }
 .content{
     position: relative;
