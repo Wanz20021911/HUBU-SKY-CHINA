@@ -76,6 +76,13 @@ u{
     line-height:24px;
 	font-size: 14px;
 }
+.content_main>h2{
+	line-height:36px;
+	font-size: 24px;
+	/* padding:10px 0; */
+	/* left: -20px; */
+	/* css注释： 设置行高为50px */ 	
+}
 .content_main>p{
 	line-height:28px;
 	font-size: 16px;
