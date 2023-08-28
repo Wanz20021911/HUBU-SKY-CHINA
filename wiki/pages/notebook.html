@@ -5,30 +5,93 @@
 
 {% block page_content %}
 
-<div class="row mt-4">
-  <div class="col-lg-8">
-    <h2>What should this page contain?</h2>
-    <hr>
-    <ul>
-      <li>Chronological notes of what your team is doing.</li>
-      <li>Brief descriptions of daily important events.</li>
-      <li>Pictures of your progress.</li>
-      <li>Mention who participated in what task.</li>
-    </ul>
-  </div>
-  <div class="col-lg-4">
-    <h2>Inspirations</h2>
-    <hr>
-    <ul> 
-      <li><a href="http://2018.igem.org/Team:Munich/Notebook">2018 Munich</a></li>
-      <li><a href="https://2019.igem.org/Team:Georgia_State/Notebook">2019 Georgia State</a></li>
-      <li><a href="https://2019.igem.org/Team:Newcastle/Notebook">2019 Newcastle</a></li>
-      <li><a href="https://2020.igem.org/Team:IISER-Pune-India/Notebook">2020 IISER Pune India</a></li>
-      <li><a href="https://2020.igem.org/Team:Lund/Notebook">2020 Lund</a></li>
-      <li><a href="https://2020.igem.org/Team:NOVA_LxPortugal/Notebook">2020 NOVA LxPortugal</a></li>
-      <li><a href="https://2020.igem.org/Team:RDFZ-China/NoteBook">2020 RDFZ China</a></li>
-    </ul>
-  </div>
-</div>
+<div class="note_card" id="note_card">
+  <h1 class="heading">
+    <span>M</span>
+    <span>O</span>
+    <span>N</span>
+    <span>T</span>
+    <span>H</span>
+    <span>L</span>
+    <span>Y</span>
+    <span>M</span>
+    <span>E</span>
+    <span>E</span>
+    <span>T</span>
+    <span>I</span>
+    <span>N</span>
+    <span>G</span>
+  </h1>
 
+  <div class="note_container">
+    <div class="note_explain">
+      <p>
+        This is a comprehensive collection of all of the meetings we have ever had, our activities, our successes and our failures. Follow us, 10
+        undergraduates learning how to navigate the iGEM world, on
+        our iGEM journey.<br><br>
+        Please click on the months to open up into our monthly notebooks!
+      </p>
+    </div>
+    <div class="note_left" id="note_left">
+      <p><a class="change-btn partnership-btn first" href="https://static.igem.wiki/teams/4429/wiki/notebook/april-final-compressed.pdf">APRIL
+      </a></p>
+      <!-- <br> -->
+      <p><a class="change-btn partnership-btn first" href="https://static.igem.wiki/teams/4429/wiki/notebook/may-final.pdf">MAY</a></p>
+      <!-- <br> -->
+      <p><a class="change-btn partnership-btn first" href="https://static.igem.wiki/teams/4429/wiki/notebook/june-final-compressed-1.pdf">JUNE</a><a></a></p><a>
+      <!-- <br> -->
+      </a><p><a></a><a class="change-btn partnership-btn first" href="https://static.igem.wiki/teams/4429/wiki/notebook/july-compressed.pdf">JULY</a></p>
+      <!-- <br> -->
+      <p><a class="change-btn partnership-btn first" href="https://static.igem.wiki/teams/4429/wiki/notebook/august.pdf">AUGUST</a></p>
+      <!-- <br> -->
+      <p><a class="change-btn partnership-btn first" href="https://static.igem.wiki/teams/4429/wiki/notebook/september.pdf">SEPTEMBER</a></p>
+      <!-- <br> -->
+      <p><a class="change-btn partnership-btn first" href="https://static.igem.wiki/teams/4429/wiki/notebook/october.pdf">OCTOBER</a></p>
+      </div>
+      <div class="note_right" id="note_right">
+      <!-- <h1>Our Process</h1>
+      <br>  -->
+      <div class="process-wrapper">
+        <div id="progress-bar-container">
+          <ul>
+            <li class="step step01 active"><div class="step-inner">HOME WORK</div></li>
+            <li class="step step02"><div class="step-inner">RESPONSIVE PART</div></li>
+            <li class="step step03"><div class="step-inner">OUR LOCATIONS</div></li>
+            <li class="step step04"><div class="step-inner">TESTIMONIALS PART</div></li>
+            <li class="step step05"><div class="step-inner">OUR LOCATIONS</div></li>
+          </ul>
+        
+          <div id="line">
+            <div id="line-progress"></div>
+          </div>
+        </div>
+        <div id="progress-content-section">
+          <div class="section-content discovery active">
+            <h2>HOME SECTION</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum ac, tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in dapibus lorem. Suspendisse vitae velit ac ante consequat placerat ut sed eros. Nullam porttitor mattis mi, id fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas volutpat turpis at felis egestas malesuada. Phasellus sem odio, venenatis at ex a, lacinia suscipit orci.</p>
+          </div>
+        
+          <div class="section-content strategy">
+            <h2>GALLERY SECTION</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum ac, tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in dapibus lorem. Suspendisse vitae velit ac ante consequat placerat ut sed eros. Nullam porttitor mattis mi, id fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas volutpat turpis at felis egestas malesuada. Phasellus sem odio, venenatis at ex a, lacinia suscipit orci.</p>
+          </div>
+          <div class="section-content creative">
+            <h2>Creative CREATIONS</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum ac, tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in dapibus lorem. Suspendisse vitae velit ac ante consequat placerat ut sed eros. Nullam porttitor mattis mi, id fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas volutpat turpis at felis egestas malesuada. Phasellus sem odio, venenatis at ex a, lacinia suscipit orci.</p>
+          </div>
+          
+          <div class="section-content production">
+            <h2>TESTIMONIALS NOW</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum ac, tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in dapibus lorem. Suspendisse vitae velit ac ante consequat placerat ut sed eros. Nullam porttitor mattis mi, id fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas volutpat turpis at felis egestas malesuada. Phasellus sem odio, venenatis at ex a, lacinia suscipit orci.</p>
+          </div>
+          
+          <div class="section-content analysis">
+            <h2>OUR LOCATIONS</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum ac, tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in dapibus lorem. Suspendisse vitae velit ac ante consequat placerat ut sed eros. Nullam porttitor mattis mi, id fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas volutpat turpis at felis egestas malesuada. Phasellus sem odio, venenatis at ex a, lacinia suscipit orci.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>	
 {% endblock %}
