@@ -23,6 +23,17 @@ body{
 	width: 100vw;
     height: 100vh;
 }
+.banner>img{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;/*应该是覆盖整个容器*/
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
 .content_left{
     position: sticky;
     /* margin: 0px;
