@@ -1,0 +1,258 @@
+body,ul,li,a{
+    margin: 0px;
+    padding: 0px;
+    list-style:none;
+    text-decoration: none;				
+}/*取消所有表格的格式*/
+body{
+    background-color: #ffffff;
+}
+:root{
+    --header-font:"Kanit", sans-serif;
+    --body-font:"Helvetica Neue";
+    --pblue:#4154CD; 
+    --bblue:#3980FE; 
+    --sblue:#63A6F7; 
+    --lblue:#59CEFF;
+    --orange:#ff8e3a;
+    --cyan:#5FCAC8;
+}
+
+.note-card{
+    min-width: 30vw;
+    box-shadow: rgba(80, 79, 79, 0.2) 0px 2px 4px 0px, rgba(80, 79, 79, 0.2) 0px 3px 10px 0px;
+    /* margin: 5vh 0px 5vh 5vw; */
+    
+    padding: 15px 25px;
+}
+header{
+    margin-bottom: -200px!important;
+}
+.heading{
+    text-align: center;
+    padding:1.5rem 0;
+}
+  
+.heading span{
+    font-size: 3.5rem;
+    background:rgba(255, 165, 0,.2);
+    color:var(--orange);
+    border-radius: .5rem;
+    padding:.2rem 1rem;
+}
+  
+.heading span.space{
+    background:none;
+}
+
+.note_container{
+    width: 80%; 
+    margin: 6vh auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap:2rem;
+    /* text-align: center; */
+    justify-content:space-evenly;
+    align-items: top;
+    border-radius: 2rem;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    padding:2rem 2rem;
+}
+.note_explain{
+    width: 95%;
+    margin: 10px auto;
+}
+.note_left{
+    width:20%;
+}
+.note_left>p{
+    text-align:center;
+    padding: 0 auto;
+    width: 100%;
+}
+.note_right{
+    width:75%;
+}
+.partnership-btn {
+    margin: 0vh 0px !important;
+    display: flex;
+    text-align: center;
+}
+.first {
+    width: 100px;
+    background-color: var(--pblue);
+    background-image: linear-gradient(45deg, var(--lblue) 0%, var(--lblue) 55%, var(--bblue) 90%);
+    color: white;
+    font-size: .8rem;
+    font-weight: 200;
+    text-align: center;
+    background-size: 200% 200% !important;
+    box-shadow: rgba(0, 40, 120, 0.35) 0px 2px 4px 0px !important;
+    padding: 6px 18px;
+    text-decoration: none;
+    transition: all 0.5s ease 0s;
+    background-position: 100% 0px !important;
+    border-radius: 50px !important;
+}
+/* .first>p>a{
+    color: #fff;
+    font-size:14px;
+    line-height:1em;
+} */
+/* --- Start progress bar --- */
+.process-wrapper {
+    margin:auto;
+    max-width:1080px;
+    }
+    #progress-bar-container {
+        position:relative;
+        width:90%;
+        margin:auto;
+        height:100px;
+        margin-top:40px;
+    }
+    #progress-bar-container ul {
+        padding:0;
+        margin:0;
+        padding-top:15px;
+        z-index:9999;
+        position:absolute;
+        width:100%;
+        margin-top:-40px
+    }
+    #progress-bar-container li:before {
+        content:" ";
+        display:block;
+        margin:auto;
+        width:30px;
+        height:30px;
+        border-radius:50%;
+        border:solid 2px #aaa;
+        transition:all ease 0.3s;
+            
+    }
+    #progress-bar-container li.active:before, #progress-bar-container li:hover:before {
+    border:solid 2px #fff;
+            
+    background: linear-gradient(to right, var(--lblue) 0%,#fff 100%); 
+    }
+    #progress-bar-container li {
+        list-style:none;
+        float:left;
+        width:20%;
+        text-align:center;
+        color:#aaa;
+        text-transform:uppercase;
+        font-size:11px;
+        cursor:pointer;
+        font-weight:700;
+        transition:all ease 0.2s;
+        vertical-align:bottom;
+        height:60px;
+        position:relative;
+    }
+    #progress-bar-container li .step-inner {
+        position:absolute;
+        width:100%;
+        bottom:0;
+        font-size: 12px;
+    }
+    #progress-bar-container li.active, #progress-bar-container li:hover {
+        color:#444;
+    }
+    #progress-bar-container li:after {
+        content:" ";
+        display:block;
+        width:6px;
+        height:6px;
+        background:#777;
+        margin:auto;
+        border:solid 7px #fff;
+        border-radius:50%;
+        margin-top:40px;
+        box-shadow:0 2px 13px -1px rgba(0,0,0,0.3);
+        transition:all ease 0.2s;
+    }
+    #progress-bar-container li:hover:after {
+    background:#555;
+    }
+    #progress-bar-container li.active:after {
+        background:#207893;
+    }
+    #progress-bar-container #line {
+        width:80%;
+        margin:auto;
+        background: #eee;
+        height:6px;
+        position:absolute;
+        left:10%;
+        top:57px;
+        z-index:1;
+        border-radius:50px;
+        transition:all ease 0.9s;
+    }
+    #progress-bar-container #line-progress {
+        content:" ";
+        width:3%;
+        height:100%;
+        background: #207893;   
+        background: linear-gradient(to right, #207893 0%,#2ea3b7 100%); 
+        position:absolute;
+        z-index:2;
+        border-radius:50px;
+        transition:all ease 0.9s;
+    }
+    #progress-content-section {
+        width:90%;
+        margin: auto;
+        background: #f3f3f3;
+        border-radius: 4px;
+    }
+    #progress-content-section .section-content {
+        padding:30px 40px;
+        text-align:center;
+    }
+    #progress-content-section .section-content h2 {
+        font-size:18px;
+        text-transform:uppercase;
+        color:var(--bblue);
+        letter-spacing:1px;
+    }
+    #progress-content-section .section-content p {
+        font-size:14px;
+        line-height:1.8em;
+        color: var(--pblue);
+        text-align: left;
+    }
+    p{
+        color: var(--pblue);
+        font-size:14px;
+        line-height:1.8em;
+    }
+    #progress-content-section .section-content {
+        display:none;
+        animation: FadeInUp 700ms ease 1;
+        animation-fill-mode:forwards;
+        transform:translateY(15px);
+        opacity:0;
+    }
+    #progress-content-section .section-content.active {
+        display:block;
+    }
+    @keyframes FadeInUp {
+    0% {
+        transform:translateY(15px);
+        opacity:0;
+    }
+    
+    100% {
+        transform:translateY(0px);
+        opacity:1;
+    }
+    }
+
+@media screen and (max-width:750px){
+    p,h1,img {
+        transform:scale(0.8);
+    }
+}
