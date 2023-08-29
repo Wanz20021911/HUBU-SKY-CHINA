@@ -9,6 +9,60 @@ body{
     scroll-behavior: smooth;
     scroll-padding-top: 90px;/*防止导航栏覆盖*/
 }
+
+.screen{
+    /* margin-top: -60px; */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-flow: column;
+  position: relative;
+  z-index: 0;
+  padding:2rem 9%; */
+  margin-top: -60px;
+}
+
+#title{
+    position: absolute;
+    margin-top:10vh;
+    width: 100%;
+}
+#title>p{
+    font-size: 10em;
+    color: #fff;
+    /*background: rgba(0, 0, 0, 0.526);*/
+    font-family: "Microsoft YaHei";
+    font-weight:bolder;
+    position: relative;
+    text-align: center;
+}
+/*header::before*/
+.banner img{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    /* background-image: url(../img/Description_cover1.png); */
+    /* background-size: cover;应该是覆盖整个容器 */
+    object-fit: cover;
+    z-index: -1;
+    /* clip: rect(25px 0px 5px 0px); */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /*核心实现视差效果*/
+    transform: translateZ(-1px);
+}
+
+/* .banner img{
+  position: absolute;
+  top:0; left: 0;
+  z-index: -1;
+  height: 100%;
+  width:100%;
+  object-fit: cover;
+} */
 .content{
     position: relative;
 	width: 80%;
@@ -17,29 +71,7 @@ body{
     margin-right: auto;
 	margin-top: -30vh;
 }
-.screen{
-    /* margin-top: -60px; */
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: column;
-  position: relative;
-  z-index: 0;
-  padding:2rem 9%;
-  margin-top: -65px;
-}
-#title{
-    width: 100%;
-}
-.banner img{
-  position: absolute;
-  top:0; left: 0;
-  z-index: -1;
-  height: 100%;
-  width:100%;
-  object-fit: cover;
-}
+
 .content_left{
     position: sticky;
     /* margin: 0px;
