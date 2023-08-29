@@ -5,29 +5,241 @@
 
 {% block page_content %}
 
-<div class="row">
-  <div class="col-8">
-    <h2>What should this page contain?</h2>
-    <hr>
-    <ul>
-      <li>Include pictures of your teammates, don't forget instructors and advisors!</li>
-      <li>You can add a small biography or a few words from each team member, to tell us what you like, and what motivated you to participate in iGEM.</li>
-      <li>Take team pictures! Show us your school, your lab and little bit of your city.</li>
-      <li>Remember that image galleries can help you showcase many pictures while saving space.</li>
-    </ul>
-    <div class="bd-callout bd-callout-info"><strong>Important:</strong> Your wiki pages will be archived at the end of the iGEM season and this content will remain online. Please keep this in mind as you post photos and personal information on this page.</div>
+<div class="screen">
+  <div id="title"><p>Team<p></div>
+  <div class="banner"><img src="{{ url_for('static', filename = 'img/Description_cover1.png') }}"></div>
+</div>
+
+<div class="note_card" id="note_card">
+  <h1 class="heading">
+    <span>T</span>
+    <span>e</span>
+    <span>a</span>
+    <span>m</span>
+    <span>m</span>
+    <span>e</span>
+    <span>m</span>
+    <span>b</span>
+    <span>e</span>
+    <span>r</span>
+  </h1>
+
+    <div class="note_container">
+  <!-- <div class="container-everything"> -->
+      <!-- Page Content -->
+  <!-- <div class="container"> -->
+    <div class="bigBog">
+      <div class="mainCONTAINER">
+      <!--图片-->
+      <div class="mainCard">
+        <div class="role">
+          <h1 class="roleText" id="mRoleID">STUDENT</h1>
+        </div>
+        <div class="trialCONTAINER">
+          <img class="imageCard" src="https://static.igem.wiki/teams/4245/wiki/shrunkmemberimages/madhav.png" id="mPicID">
+          <div class="overflow">
+            <h1 class="memberName" id="mNameID">Huang Ziyue</h1>
+            <p>web set</p>
+            <p>web set</p>
+          </div>
+          </div>
+
+        <div>
+          <p class="memberDescription" id="mBioID">Hey, I'm Huang Ziyue!A Student, majoring in ideological and political education, is mainly responsible for social practice and team propaganda in our team, a big family with friendship, unity and a clear division of labor. Even if there are many difficulties, courage is essential. I hope that with the joint efforts of everyone, we will pass the difficult pass. Although the road ahead is long, it is still full of hope.</p>
+        </div>
+        </div>
+      </div>
+    </div>
+    
+      <!-- <br> -->
+    <div class="col" id="memberCaro">
+    <div class="row-12">
+      <div class="carousel-container">
+      <div class="carousel-inner">
+        <div class="track">
+        <div class="card-container">
+          <div class="carousel-items">
+          <img class="card" src="https://static.igem.wiki/teams/4245/wiki/shrunkmemberimages/madhav.png"
+            id="Huang Ziyue" onclick="changeName(this.id)">
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="carousel-items">
+          <img class="card" src="https://static.igem.wiki/teams/4245/wiki/shrunkmemberimages/manasvi.png"
+            id="Song Yiqian" onclick="changeName(this.id)">
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="carousel-items">
+          <img class="card" src="https://static.igem.wiki/teams/4245/wiki/shrunkmemberimages/vineeth.png"
+            id="Fang Yi" onclick="changeName(this.id)">
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="carousel-items">
+          <img class="card" src="https://static.igem.wiki/teams/4245/wiki/shrunkmemberimages/sahana.png"
+            id="Sahana Narayanan" onclick="changeName(this.id)">
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="carousel-items">
+          <img class="card" src="https://static.igem.wiki/teams/4245/wiki/shrunkmemberimages/rick.png"
+            id="Lu Zixin" onclick="changeName(this.id)">
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="carousel-items">
+          <img class="card"
+            src="https://static.igem.wiki/teams/4245/wiki/shrunkmemberimages/varnica-green-1-22.png"
+            id="Hu Lijuan" onclick="changeName(this.id)">
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="carousel-items">
+          <img class="card" src="https://static.igem.wiki/teams/4245/wiki/shrunkmemberimages/suhayb.png"
+            id="Tong Zhuolin" onclick="changeName(this.id)">
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="carousel-items">
+          <img class="card" src="https://static.igem.wiki/teams/4245/wiki/shrunkmemberimages/michelle.png"
+            id="Zheng Xiaotong" onclick="changeName(this.id)">
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="carousel-items">
+          <img class="card" src="https://static.igem.wiki/teams/4245/wiki/shrunkmemberimages/manaswi.png"
+            id="Jiang Wenhao" onclick="changeName(this.id)">
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="carousel-items">
+          <img class="card" src="https://static.igem.wiki/teams/4245/wiki/shrunkmemberimages/nick.png"
+            id="Liu Chuan" onclick="changeName(this.id)">
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="carousel-items">
+          <img class="card" src="https://static.igem.wiki/teams/4245/wiki/shrunkmemberimages/cho.png"
+            id="Ruan Jiapeng " onclick="changeName(this.id)">
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="carousel-items">
+          <img class="card" src="https://static.igem.wiki/teams/4245/wiki/shrunkmemberimages/christina-yi.png"
+            id="Jiang Zhihao" onclick="changeName(this.id)">
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="carousel-items">
+          <img class="card" src="https://static.igem.wiki/teams/4245/wiki/shrunkmemberimages/vandana.png"
+            id="Wan Zheng" onclick="changeName(this.id)">
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="carousel-items">
+          <img class="card" src="https://static.igem.wiki/teams/4245/wiki/shrunkmemberimages/hari.png"
+            id="Huang Xinyi" onclick="changeName(this.id)">
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="carousel-items">
+          <img class="card" src="https://static.igem.wiki/teams/4245/wiki/shrunkmemberimages/ricky.png"
+            id="Xiao Yubo" onclick="changeName(this.id)">
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="carousel-items">
+          <img class="card" src="https://static.igem.wiki/teams/4245/wiki/shrunkmemberimages/sam.png"
+            id="Sam Yeleti" onclick="changeName(this.id)">
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="carousel-items">
+          <img class="card" src="https://static.igem.wiki/teams/4245/wiki/shrunkmemberimages/srirag.png"
+            id="Srirag Tatavarti" onclick="changeName(this.id)">
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="carousel-items">
+          <img class="card" src="https://static.igem.wiki/teams/4245/wiki/shrunkmemberimages/hannah.png"
+            id="Hannah Noh" onclick="changeName(this.id)">
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="carousel-items">
+          <img class="card" src="https://static.igem.wiki/teams/4245/wiki/shrunkmemberimages/ratio.png"
+            id="Rathi Murugan" onclick="changeName(this.id)">
+          </div>
+        </div>
+  
+        </div>
+      </div>
+      <div class="carouselNav">
+        <button class="prev">
+        <img class="left-arrow" src="https://static.igem.org/mediawiki/2021/1/1c/T--Lambert_GA--Arrow.png">
+        </button>
+        <button class="next">
+        <img class="right-arrow" src="https://static.igem.org/mediawiki/2021/1/1c/T--Lambert_GA--Arrow.png">
+        </button>
+      </div>
+      </div>
+  
+    </div>
+    </div>
+    
   </div>
-  <div class="col-4">
-    <h2>Inspirations</h2>
-    <hr>
-    <ul>
-      <li><a href="https://2019.igem.org/Team:CU/Team">2019 CU</a></li>
-      <li><a href="https://2019.igem.org/Team:UANL/Team">2019 UANL</a></li>
-      <li><a href="https://2019.igem.org/Team:William_and_Mary/Team">2019 William and Mary</a></li>
-      <li><a href="https://2020.igem.org/Team:BOKU-Vienna/Team">2020 BOKU Vienna </a></li>
-      <li><a href="https://2020.igem.org/Team:CAU_China/Team_Member">2020 CAU China</a></li>
-      <li><a href="https://2020.igem.org/Team:Lethbridge/Members">2020 Lethbridge</a></li>
-    </ul>
+
+  <div class="note_container">
+      <div class="col" id="memberCaro">
+        <div class="row-12">
+          <div class="carousel-container">
+            <div class="carousel-inner">
+              <div class="track">
+                <div class="card-container">
+                  <div class="carousel-items">
+                  <img class="card" src="https://static.igem.wiki/teams/4245/wiki/shrunkmemberimages/madhav.png"
+                    id="Huang Ziyue" onclick="changeName(this.id)">
+                  </div>
+                </div>
+                <div class="card-container">
+                  <div class="carousel-items">
+                  <img class="card" src="https://static.igem.wiki/teams/4245/wiki/shrunkmemberimages/manasvi.png"
+                    id="Song Yiqian" onclick="changeName(this.id)">
+                  </div>
+                </div>
+                <div class="card-container">
+                  <div class="carousel-items">
+                  <img class="card" src="https://static.igem.wiki/teams/4245/wiki/shrunkmemberimages/vineeth.png"
+                    id="Fang Yi" onclick="changeName(this.id)">
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="bigBog">
+        <div class="mainCONTAINER">
+        <!--图片-->
+        <div class="mainCard">
+          <div class="role">
+            <h1 class="roleText" id="mRoleID">TEACHER</h1>
+          </div>
+          <div class="trialCONTAINER">
+            <img class="imageCard" src="https://static.igem.wiki/teams/4245/wiki/shrunkmemberimages/madhav.png" id="mPicID">
+            <div class="overflow">
+              <h1 class="memberName" id="mNameID">Wang Fei</h1>
+              <p>web set</p>
+              <p>web set</p>
+            </div>
+            </div>
+          <div>
+            <p class="memberDescription" id="mBioID">Hey, I'm Huang Ziyue!A Student, majoring in ideological and political education, is mainly responsible for social practice and team propaganda in our team, a big family with friendship, unity and a clear division of labor. Even if there are many difficulties, courage is essential. I hope that with the joint efforts of everyone, we will pass the difficult pass. Although the road ahead is long, it is still full of hope.</p>
+          </div>
+          </div>
+        </div>
+      </div>
   </div>
 </div>
 
