@@ -69,7 +69,7 @@ body{
 	margin: 0px auto;
 	justify-content: space-evenly;
     margin-right: auto;
-	margin-top: -5vh;
+	margin-top: -3vh;
 }
 
 .content_left{
@@ -80,6 +80,7 @@ body{
     /*flex: 0 0 auto; */
     float:left;
     width: 16.7%;
+    margin-top: 3px;
     /* padding:10px 0; */
     /* margin: 16px 0px!important; */
 
