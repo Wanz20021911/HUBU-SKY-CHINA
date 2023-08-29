@@ -1,0 +1,281 @@
+body {
+    overflow-x: hidden;
+  }
+:root{
+    --header-font:"Kanit", sans-serif;
+    --body-font:"Helvetica Neue";
+    --pblue:#4154CD; 
+    --bblue:#3980FE; 
+    --sblue:#63A6F7; 
+    --lblue:#59CEFF;
+    --orange:#ff8e3a;
+    --cyan:#5FCAC8;
+}
+  body>div.container {
+      margin-left: auto;
+      width: 100%;
+  }
+  .NavLogo {
+    height: 13vh;
+    max-height: 70px;
+  }
+
+  nav {
+    z-index: 99999999;
+  }
+  .carousel-container {
+    width: 150px;
+    margin: 10px auto;
+    min-height: 110px;
+    position: relative;
+  }
+
+  @media screen and (max-width: 768px) {
+    .carousel-container {
+      width: 80%;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .carousel-container {
+      width: 85%;
+    }
+  }
+
+  .carousel-container .carousel-inner {
+    overflow: hidden;
+  }
+
+  .carousel-container .track {
+    /* display: inline-flex; */
+    transition: transform 0.5s;
+    height: 330px;
+  }
+
+  .carousel-container .card-container {
+    width: 140px;
+    flex-shrink: 0;
+    height: 110px;
+  }
+
+  .carousel-container .card-container .card {
+    /* max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto; */
+    width: 100px;
+    height: 100px;
+    border: 3px solid var(--bblue);
+    background-color: rgba(255, 255, 255, 0.573);
+    border-radius: 50%;
+    cursor: pointer;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .carouselNav button {
+    border-radius: 50%;
+    background: transparent;
+    border: none !important;
+    position: absolute;
+    /* top: 50%; */
+    /* transform: translateY(-50%); */
+    cursor: pointer;
+    padding: 0px;
+  }
+
+  .carouselNav .prev {
+    left: -30px;
+    /* transform: translateY(-50%); */
+    display: none;
+  }
+
+  .carouselNav .prev.show {
+    display: block;
+  }
+
+  .carouselNav .next {
+    right: 0px;
+  }
+
+  .carouselNav .next.hide {
+    display: none;
+  }
+
+  .carousel-items {
+    padding: 5px;
+  }
+
+  .right-arrow {
+    transform: rotate(90deg);
+  }
+
+  .left-arrow {
+    transform: rotate(270deg);
+  }
+
+
+  .teamPic {
+    width: 65vw;
+    border-radius: 50px;
+    border: 8px solid #ffffff;
+  }
+
+  .role {
+    padding: 10px 0px 10px 0px;
+    background-color: #f6bcea;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    text-align: center;
+  }
+
+  .role h1 {
+    color: var(--bblue);
+    font-size: 48px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .imageCard {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    position: absolute;
+    transition: 0.3s ease-in-out;
+  }
+
+  .imageCard:hover {
+    transform: scale(1.5);
+    border: 3px solid #0063f8bd;
+    background-color: #ffffffb6;
+  }
+
+  .openCircle {
+    /* (A) SAME WIDTH & HEIGHT - SQUARE */
+    width: 20px;
+    height: 20px;
+
+    /* (B) 50% RADIUS = CIRCLE */
+    border-radius: 50%;
+
+    /* (C) BACKGROUND COLOR */
+    /* border: 3px solid var(--pblue); */
+    background-color: var(--lblue);
+    float: left;
+    margin-right: 8px;
+  }
+
+  .closedCircle {
+    /* (A) SAME WIDTH & HEIGHT - SQUARE */
+    width: 20px;
+    height: 20px;
+
+    /* (B) 50% RADIUS = CIRCLE */
+    border-radius: 50%;
+
+    /* (C) BACKGROUND COLOR */
+    background: #f85c5c !important;
+    /* border: 3px solid #f85c5c; */
+    float: left;
+    margin-right: 8px;
+
+  }
+
+  .memberName {
+    /* transform: translate(0px, 0px); */
+    text-align: left;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 100px;
+    padding-top: 25px;
+    font-size: 30px;
+    /* border: 1px solid red; */
+  }
+  .overflow {
+    inline-size: 600px;
+    /* overflow-wrap: break-word; */
+    display: flex;
+    /* justify-items: end; */
+    /* border: 1px solid rgb(0, 229, 255); */
+  }
+  .overflow>p{
+    margin-top: 35px;
+    background-color: var(--orange);
+    color: white;
+    padding: 5px 10px;
+    margin-left: 10px;
+    border-radius:20px
+  }
+
+  /* .funnyLine {
+    padding-top: 5px;
+    margin: 0px;
+    padding-bottom: 5px;
+    color: #F85D5C;
+    font-size: 15px;
+  } */
+
+  .memberDescription {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    margin: 10px 10px;
+  }
+
+  .croppedHeart {
+    height: 650px;
+    width: 500px;
+    object-fit: cover;
+    object-position: 20% 0%;
+    display: inline-block;
+  }
+
+  .mainCard {
+    width: 600px;
+    background-color: var(--bblue);
+    border-radius: 30px;
+    display: inline-block;
+  }
+
+  .mainCONTAINER {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bigBog {
+    /* background-color: #282828; */
+    border-radius: 20px;
+    /* box-shadow: 0px 5px 15px 4px rgba(0, 116, 249, 0.6); */
+    padding: 24px;
+    margin-top: -20px;
+  }
+
+
+  .trialCONTAINER {
+    display: flex;
+    align-items: center;
+    transform: translate(20px, -20px);
+  }
+
+
+  body>div.container {
+    margin-left: 0px !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .memberName {
+      /* transform: translate(0px, 0px) !important;
+    display: block !important;
+    padding-top: 140px !important;
+    margin: 0 !important; */
+    }
+
+    .croppedHeart {
+      display: none !important;
+    }
+  }
