@@ -114,58 +114,6 @@
 
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script> 
-  (function($) {
-    $.fn.timeline = function() {
-      var selectors = {
-        id: $(this),
-        item: $(this).find(".timeline-item"),
-        activeClass: "timeline-item--active",
-        img: ".timeline__img",
-
-      };
-      var itemLength = selectors.item.length;
-      $(window).scroll(function() {
-        var max, min;
-        var pos = $(this).scrollTop();
-        selectors.item.each(function(i) {
-
-          min = $(this).offset().top;
-          max = $(this).height() + $(this).offset().top;
-          //将当前项存储在 "that" 变量中。
-          var that = $(this);
-          //如果当前项是最后一个项，并且滚动位置在项的底部一半以上，则更新时间线活动项和背景图像：
-          if (i == itemLength - 2 && pos > min + $(this).height() / 2) {
-            selectors.item.removeClass(selectors.activeClass);//移除所有活动项的样式。
-            selectors.id.css(
-              "background-image",
-              "url(" +
-                selectors.item
-                  .last()
-                  .find(selectors.img)
-                  .attr("src") +
-                ")"
-            );
-            selectors.item.last().addClass(selectors.activeClass);
-          } else if (pos <= max - 40 && pos >= min) {
-            selectors.id.css(
-              "background-image",
-              "url(" +
-                $(this)
-                  .find(selectors.img)
-                  .attr("src") +
-                ")"
-            );
-            selectors.item.removeClass(selectors.activeClass);
-            $(this).addClass(selectors.activeClass);
-          }
-        });
-      });
-    };
-  })(jQuery);
-
-  $("#timeline-1").timeline();
-  </script>
   <script>
     var img1 = document.getElementById("img1");
     var modal1 = document.getElementById("modal1");
