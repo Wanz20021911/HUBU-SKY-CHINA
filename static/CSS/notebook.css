@@ -133,7 +133,7 @@ header{
         border-radius:50%;
         border:solid 2px #aaa;
         transition:all ease 0.3s;
-            
+        margin-bottom: 2px;
     }
     #progress-bar-container li.active:before, #progress-bar-container li:hover:before {
     border:solid 2px #fff;
