@@ -7,7 +7,7 @@ body,ul,li,a{
 body{
     background-color: #ffffff;
     scroll-behavior: smooth;
-    scroll-padding-top: 90px;/*防止导航栏覆盖*/
+    scroll-padding-top: 100px;/*防止导航栏覆盖*/
 }
 
 .screen{
