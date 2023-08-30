@@ -11,29 +11,6 @@ body{
 header{
     height: 45px!important;
 }
-/* #title{
-    margin-top:50vh!important;
-    margin-left: 17vh;
-}
-#title p{
-    color: rgb(0, 166, 255)!important;
-}
-.link{
-	text-align: center;
-	background-color: #0cbff6;
-	border-radius: 20px;
-	height: 35px;
-	line-height: 35px;
-    width: 80%;
-}
-.link a{
-    font-size: 10px;
-    color: #ffffff;
-
-}
-.banner{
-    background-image: url(C:/Users/WAN铮Jerry/Pictures/Wallpaper/bg.jpg)!important;
-} */
 #timeline {
     width: 80%;
     flex: 0 0 auto;
@@ -56,11 +33,7 @@ header{
     border-left: rgba(255, 255, 255, 0);
     float: right;
 }
-/* video{
-    width:60%; 
-    padding-left: 300px;
-    padding-top:50px;
-} */
+
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 
 :root{
@@ -128,7 +101,7 @@ html{
   font-family: var(--header-font);
 }
 
-.home .video-container video{
+.home .video-container img{
   position: absolute;
   top:0; left: 0;
   z-index: -1;
@@ -137,27 +110,6 @@ html{
   object-fit: cover;
 }
 
-.home .controls{
-  padding:1rem;
-  border-radius: 5rem;
-  background:rgba(0, 0, 0, 0.444);
-  position: relative;
-  top:20rem;
-}
-
-.home .controls .vid-btn{
-  height:2rem;
-  width:2rem;
-  display: inline-block;
-  border-radius: 50%;
-  background:#fff;
-  cursor: pointer;/*换成小水滴*/
-  margin:0 .5rem;
-}
-
-.home .controls .vid-btn.active{
-  background:var(--lblue);
-}
 .content-introduction{
     max-width: 100%;
     margin: 0 auto;
@@ -285,9 +237,7 @@ html{
     transform: translateY(calc(-60px * (1 - var(--progress)))) scale(calc(1.8 - (0.8 * var(--progress)))) ;
     opacity: var(--progress);
 }
-/* .introduction_figure img:nth-child(1),.introduction_figure img:nth-child(2){
-    transform: scale(1.8)!important;
-} */
+
 .plan{
     width: 80%;
     flex: 0 0 auto;
