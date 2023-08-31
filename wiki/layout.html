@@ -85,7 +85,7 @@
 			});
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> -->
   <script>
           
       $(".step").click( function() {
@@ -114,8 +114,8 @@
       });
 
   </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
 <script> 
   (function($) {
     $.fn.timeline = function() {
@@ -124,7 +124,6 @@
         item: $(this).find(".timeline-item"),
         activeClass: "timeline-item--active",
         img: ".timeline__img",
-
       };
 
       var itemLength = selectors.item.length;
@@ -150,43 +149,43 @@
   $("#timeline-1").timeline();
 
 </script>
-  <script>
-    var img1 = document.getElementById("img1");
-    var modal1 = document.getElementById("modal1");
-    var modal2 = document.getElementById("modal2");
-    var modal3 = document.getElementById("modal3");
-    var modal4 = document.getElementById("modal4");
-    var modal5 = document.getElementById("modal5");
-    var modal6 = document.getElementById("modal6");
+<script>
+  var img1 = document.getElementById("img1");
+  var modal1 = document.getElementById("modal1");
+  var modal2 = document.getElementById("modal2");
+  var modal3 = document.getElementById("modal3");
+  var modal4 = document.getElementById("modal4");
+  var modal5 = document.getElementById("modal5");
+  var modal6 = document.getElementById("modal6");
 
-    img1.addEventListener('click',function(){
-      modal1.style.display = 'block';
-    });
-    img2.addEventListener('click',function(){
-      modal2.style.display = 'block';
-    });
-    img3.addEventListener('click',function(){
-      modal3.style.display = 'block';
-    });
-    img4.addEventListener('click',function(){
-      modal4.style.display = 'block';
-    });
-    img5.addEventListener('click',function(){
-      modal5.style.display = 'block';
-    })
-    img6.addEventListener('click',function(){
-      modal6.style.display = 'block';
-    })
-  </script>
-  <script>
-    var allmodals = document.getElementsByClassName('modal');
-    function closeModal() {  
-      for (var i = 0; i < allmodals.length; i++){
-        var modal = document.getElementsByClassName('modal')[i];
-        modal.style.display = 'none';
-      }
+  img1.addEventListener('click',function(){
+    modal1.style.display = 'block';
+  });
+  img2.addEventListener('click',function(){
+    modal2.style.display = 'block';
+  });
+  img3.addEventListener('click',function(){
+    modal3.style.display = 'block';
+  });
+  img4.addEventListener('click',function(){
+    modal4.style.display = 'block';
+  });
+  img5.addEventListener('click',function(){
+    modal5.style.display = 'block';
+  })
+  img6.addEventListener('click',function(){
+    modal6.style.display = 'block';
+  })
+</script>
+<script>
+  var allmodals = document.getElementsByClassName('modal');
+  function closeModal() {  
+    for (var i = 0; i < allmodals.length; i++){
+      var modal = document.getElementsByClassName('modal')[i];
+      modal.style.display = 'none';
     }
-  </script>
-  <script src="{{ url_for('static', filename = 'teammember.js') }}"></script>
+  }
+</script>
+<script src="{{ url_for('static', filename = 'teammember.js') }}"></script>
 </body>
 </html>
