@@ -68,8 +68,8 @@ body{
 	width: 80%;
 	margin: 0px auto;
 	justify-content: space-evenly;
-    margin-right: auto;
-	margin-top: -3vh;
+    /* margin-right: auto;
+	margin-top: -3vh; */
 }
 
 .content_left{
