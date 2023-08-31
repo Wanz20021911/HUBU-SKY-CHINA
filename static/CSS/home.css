@@ -99,7 +99,7 @@ html{
   font-family: var(--header-font);
 }
 
-.home .video-container img{
+.home .bg-container img{
   position: absolute;
   top:0; left: 0;
   z-index: -1;
