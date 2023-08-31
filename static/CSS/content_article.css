@@ -7,15 +7,12 @@ body,ul,li,a{
 body{
     background-color: #ffffff;
     scroll-behavior: smooth;
-    scroll-padding-top: 100px;/*防止导航栏覆盖*/
+    scroll-padding-top: 90px;/*防止导航栏覆盖*/
 }
-
-.screen{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
+/* .articlebox{
+    position: absolute;
+    flex-direction: column;
+} */
 .banner{
     margin-top: -120px;
 }
@@ -26,21 +23,37 @@ body{
     bottom: 0;
     left: 0;
     right: 0;
+    width: 100%;
+    background-size: cover;
 }
 
 .content{
+    /* position: relative; */
 	width: 80%;
 	margin: 0px auto;
 	/* display: flex; */
 	justify-content: space-evenly;
     margin-right: auto;
-    flex-wrap: wrap;
+    /* margin-top: 50px; */
+	/* height: 1250px; */
+	/* margin-top: -35vh; *//*这句话搞的鬼，让整个元素锁定位置了*/
+    /*margin-bottom: 85px; */
+	/* background-color: rgba(255, 255, 255, 0);
+	backdrop-filter: blur(5px); */
+    color: #000000;
 }
 
 .content_left{
+    /* position: -webkit-sticky; */
     position: sticky;
+    /* margin: 0px;
+    padding: 10px; */
+    /* top: vh; */
+    /*flex: 0 0 auto; */
     float:left;
     width: 16.7%;
+    /* padding:10px 0; */
+    /* margin: 16px 0px!important; */
 
 }
 .stickybar{
@@ -67,12 +80,32 @@ body{
 u{
     border-color: rgb(0, 166, 255);
 }
+  
+/* .content_left{
+    position: sticky;
+    /* margin: 0px;
+    padding: 10px; 
+    top: 200px;
+} */
+/* .sticky-div {
+    position: sticky;
+    top: 1000px;
+} */
 .content_right{
+    /* margin-top: -25px; */
     width: 83.3%;
     margin-left: 20px;
-    /* float: right; */
+    margin-left: auto;
+    float: right;
     /* margin-top: -285px; */
 }
+/* #content_left{
+    position: relative;
+}
+#list{
+    position: fixed;
+    top: 250px; /* 想要固定的位置，这里设为100px 
+} */
 #list>ul>li>a{
     line-height:1.8em;
 	font-size: 1em;
@@ -80,7 +113,9 @@ u{
 .content_main>p{
     line-height:1.8em;
 	font-size: 1em;
-    color: black;
+	/* padding:10px 0; */
+	/* left: -20px; */
+	/* css注释： 设置行高为50px */ 	
 }
 .content_left.sticky {
   position: sticky;
@@ -88,13 +123,16 @@ u{
 }
 .article{
 	flex: 0 0 auto;/*解决高度变形问题*/
+	/* width: 950px; */
 	overflow-y: none;
+	/* margin-left: 20px; */
 }
 .post-title>p{
     font-size: 2.8em;
     /* margin-left: 20px; */
 }
-/*pad端*/
-/* @media screen and (max-width:960px) and (min-width:750px){
 
-} */
+/*pad端*/
+@media screen and (max-width:960px) and (min-width:750px){
+
+}
