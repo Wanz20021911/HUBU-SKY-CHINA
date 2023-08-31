@@ -14,7 +14,7 @@ body{
     height: 100vh;
 }
 .banner img{
-    height: 100%;
+    width: 100%;
     background-size: cover;/*应该是覆盖整个容器*/
     top: 0;
     bottom: 0;
