@@ -34,6 +34,8 @@ body{
     margin-top: 30px;
     float:left;
     width: 16.7%;
+    flex: 0 0 auto;
+    height: 100%;
 }
 .stickybar{
     box-sizing: border-box;
