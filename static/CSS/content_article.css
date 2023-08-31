@@ -10,7 +10,7 @@ body{
     scroll-padding-top: 90px;/*防止导航栏覆盖*/
 }
 .banner{
-    margin-top: -120px;
+    /* margin-top: -120px; */
     height: 100vh;
 }
 .banner img{
