@@ -122,7 +122,7 @@ u{
 	/* css注释： 设置行高为50px */ 	
 }
 .content_left.sticky {
-  position: sticky;
+  position: fixed;
   top: 100px;
 }
 .article{
