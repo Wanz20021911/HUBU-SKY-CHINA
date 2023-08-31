@@ -33,7 +33,6 @@ header{
     border-left: rgba(255, 255, 255, 0);
     float: right;
 }
-
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 
 :root{
@@ -51,7 +50,6 @@ header{
   font-family: 'Nunito', sans-serif;
   margin:0; padding:0;
   box-sizing: border-box;
-  text-transform: capitalize;
   outline: none; border:none;
   text-decoration: none;
   transition: all .2s linear;
@@ -63,10 +61,11 @@ header{
 }
 
 html{
-  font-size: 62.5%;
+  /* font-size: 62.5%; */
   overflow-x: hidden;
-  scroll-padding-top: 6rem;
+  scroll-padding-top: 6rem;/*防止导航栏被覆盖*/
   scroll-behavior: smooth;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .home{
@@ -87,21 +86,20 @@ html{
 }
 
 .home .content h3{
-  font-size: 9rem;
-  color:var(--bblue);
-  text-transform: uppercase;
-  /* text-shadow: 0 .3rem .5rem rgba(0,0,0,.1); */
-  font-family: var(--header-font);
+    font-size: 6rem;
+    color:var(--bblue);
+    text-transform: uppercase;
+    font-family: var(--header-font);
+    position: relative;
 }
-
 .home .content p{
-  font-size: 2.5rem;
+  font-size: 2rem;
   color:#fff;
   padding:1rem 0;
   font-family: var(--header-font);
 }
 
-.home>.bg-container>img{
+.home .video-container img{
   position: absolute;
   top:0; left: 0;
   z-index: -1;
@@ -120,20 +118,12 @@ html{
     /* width: 100%;*/
     width: 80%;
     flex: 0 0 auto;
-    /* border:1px solid #ff8e3a; */
-    /* width: 100vw; */
     margin: 0 auto; 
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin-top: 6vh;
-    /* filter: blur(2px);  */
-    /* transition: 0.3s ease 0.4s; */
     opacity: 0;
-    /* transform: translateY(-80px);
-    position: relative;*/
-
-
 }
 @keyframes floatup {
 	from {
@@ -168,8 +158,6 @@ html{
 }
 .introduction.active{
     opacity: 1;
-    /* transform: translateY(0); */
-    /* -webkit-transition: all 250ms cubic-bezier(0.02, 0.01, 0.47, 1); */
     animation: floatup 0.8s ease-in-out;
 }
 .introduction_character{
@@ -189,26 +177,23 @@ html{
     text-transform:lowercase;/*仅有小写*/
     margin: 30px 0;
     line-height: 1.5!important;
-
-    /* transform: translateY(calc(-10px * (1 - var(--progress)))) ;/*scale(calc(1.5 - (0.5 * var(--progress)))*/
     opacity: var(--progress);
-} */
+} 
 .introduction_character p{
-    line-height:28px;
-	font-size: 20px;
+    /* line-height:1.8em; */
+	font-size: 1em;
 }
 .introduction_character h4{
-    line-height:36px;
-	font-size: 28px;
+    /* line-height:2.4em; */
+	font-size: 1.5em;
 }
 .introduction_character h3{
-    line-height:60px;
-	font-size: 52px;
+    /* line-height:3em; */
+	font-size: 2em;
     color: var(--lblue);
 }
 .introduction_character h5{
-    line-height:40px;
-	font-size: 24px;
+    font-size: 1.2em;
 }
 .introduction_figure{
     width: 40%;
@@ -237,7 +222,6 @@ html{
     transform: translateY(calc(-60px * (1 - var(--progress)))) scale(calc(1.8 - (0.8 * var(--progress)))) ;
     opacity: var(--progress);
 }
-
 .plan{
     width: 80%;
     flex: 0 0 auto;
@@ -272,7 +256,7 @@ html{
   }
   
 .heading span{
-    font-size: 3.5rem;
+    font-size: 3rem;
     background:rgba(255, 165, 0,.2);
     color:var(--orange);
     border-radius: .5rem;
@@ -293,7 +277,7 @@ html{
 .links .box-container{
     display: flex;
     flex-wrap: wrap;
-    gap:2rem;
+    gap:1rem;
     text-align: center;
     justify-content:space-around;
     align-items: center;
@@ -323,18 +307,16 @@ html{
 }
 .box:nth-child(4).active{
     animation: floatRightEnter 0.8s cubic-bezier(1,0,0,1);
-    /* animation-delay: 0.6s; */
-    /* animation-delay: 1s; */
 }
 
 .links .box-container .box img{
-    height: 25rem;
-    width:80%;
+    height: 16rem;
+    /* width:50%; */
     object-fit: cover;
 }
   
 .links .box-container .box {
-    padding:2rem;
+    padding:1rem;
     /* width: 80%; */
 }
 
@@ -391,11 +373,17 @@ html{
 #video>div{
     width:100%;
 }
-#video>div>video{
+#video>div>img{
     width:100%;
 }
 @media screen and (max-width:750px){
-    p,h3,h4,h5,img {
+    p,h1,h2,h3,h4,h5,li{
         transform:scale(0.8);
+    }
+    img {
+        transform:scale(0.6);
+    }
+    .home img {
+        transform: scale(1) !important;;
     }
 }
