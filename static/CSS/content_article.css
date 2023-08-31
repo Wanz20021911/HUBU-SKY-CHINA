@@ -14,7 +14,7 @@ body{
     flex-direction: column;
 } */
 .banner{
-    margin-top: -120px;
+    /* margin-top: -120px; */
 }
 .banner img{
     width: 100%;
@@ -23,8 +23,6 @@ body{
     bottom: 0;
     left: 0;
     right: 0;
-    width: 100%;
-    background-size: cover;
 }
 
 .content{
