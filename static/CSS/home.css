@@ -82,7 +82,7 @@ html{
 .home .content{
   text-align: left;
   width: 100%;
-  margin-top: 50px;
+  margin-top: 80px;
 }
 
 .home .content h3{
@@ -111,7 +111,7 @@ html{
 .content-introduction{
     max-width: 100%;
     margin: 0 auto;
-    margin-top: 120px;
+    margin-top: 160px;
 }
 .introduction{
     /* width: 100%;*/
