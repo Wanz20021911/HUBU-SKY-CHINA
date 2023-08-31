@@ -80,6 +80,7 @@ u{
 .content_main>p{
     line-height:1.8em;
 	font-size: 1em;
+    color: black;
 }
 .content_left.sticky {
   position: sticky;
