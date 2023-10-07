@@ -372,7 +372,7 @@ html{
 #video>div{
     width:100%;
 }
-#video>div>img{
+#video>div>video{
     width:100%;
 }
 @media screen and (max-width:750px){
