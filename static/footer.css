@@ -356,11 +356,9 @@ img {
 }
 
 .chong_member{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: row wrap;
-    flex-shrink: 1;
+    position: fixed;
+    bottom:-150px;
+    right: -120px;
     
 }
 .chong_menu{
