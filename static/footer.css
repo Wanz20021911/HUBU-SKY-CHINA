@@ -354,3 +354,61 @@ img {
     height: 60px;
     background: #ffffff00
 }
+
+.chong_member{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    flex-shrink: 1;
+    
+}
+.chong_menu{
+    flex-wrap: wrap;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    /* background: #8460ed; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 50px;
+    margin-top: -50px; */
+    
+}
+.chong_menu li{
+    position: absolute;
+    left: 150px;
+    list-style: none;
+    transform-origin: 100px;
+    transition: 0.5s linear;
+    transition-delay: calc(0.1s*var(--i)+45deg);
+    transform: rotate(0deg) translateX(90px)
+}
+.chong_menu.active li{
+    transform: rotate(calc(360deg/8*var(--i)));
+}
+.chong_menu .mImg li svg{
+    border-radius: 50%;
+    width: 30px;
+    /* height:100px; */
+    transform: rotate(calc(360deg/-8*var(--i)));/*一个负号，神奇
+    /* transform-origin: 220px; */
+    
+}
+
+.chong_toggle{
+    /* top: 50%; */
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1.2s ease-in-out;
+}
+.chong_toggle>img{
+    height: 120px;
+    -webkit-user-drag: none;
+    margin-top: 40px;
+}
