@@ -1,1 +1,79 @@
+.article-container {
+    width: 90%;
+    display: flex;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    flex-wrap:wrap;
+}
 
+.directory {
+    width: 300px;
+}
+
+.article-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.article-content h2 {
+    margin: 0;
+}
+
+.districtName {
+    width: 100%;
+}
+.districtName p{
+    line-height: 1.5em;
+}
+.districtName img{
+    width: 100%;
+}
+.figure{
+    color: #ccc;
+    text-align: center;
+}
+/* .districtName figure{
+    background: #abdbf9ae;
+    padding: 10px 20px;
+    color: #1364f0;
+    border-radius:15px;
+
+} */
+#quation{
+    width: 100%;
+}
+.article-container .directory ul,
+.article-container .directory li {
+    list-style: none;
+}
+
+#category {
+    position: sticky;
+    top: 48px;
+    right: 0;
+}
+
+#category a {
+    padding: 6px 30px 6px 25px;
+    color: #2d2e2f;
+    outline: none;
+    text-decoration: none;
+    line-height: 30px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+#category>.article-content{
+    margin-left: 60px;
+}
+#category a:hover {
+    /* background: #efefef; */
+    border-left:1px solid #efefef;
+}
+
+#category a.active {
+    border-left:3px solid #016afc;
+    background: #188fff11;
+    color: #1890ff;
+    /* padding: 0 16px; */
+}
