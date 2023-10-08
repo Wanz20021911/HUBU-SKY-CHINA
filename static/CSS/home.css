@@ -286,7 +286,8 @@ html{
     transform: scale(2);
 }
 .plan_figure img{
-    width: 80%;
+    /* width: 80%; */
+    height: 200px;
 }
 .heading{
     text-align: center;
