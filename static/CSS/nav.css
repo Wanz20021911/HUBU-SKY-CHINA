@@ -17,7 +17,22 @@ header{
     height: 750px;
     margin-bottom: 20px;
 }
-
+/*进度条*/
+.top-progress-block{
+    width: 100%;
+    height: 8px;
+}
+.top-progress{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 8px;
+    background:linear-gradient(
+        to left,
+        #009fd9, 
+        rgb(174, 238, 236)
+    );
+}
 nav{
     position: fixed;
     width: 100%;
