@@ -285,6 +285,9 @@ html{
     margin: 4vh 0;
     transform: scale(2);
 }
+.plan_figure img{
+    width: 80%;
+}
 .heading{
     text-align: center;
     padding:2.5rem 0;
