@@ -283,7 +283,7 @@ html{
 }
 .plan_figure{
     margin: 4vh 0;
-    transform: scale(2);
+    transform: scale(1.2);
 }
 .plan_figure img{
     /* width: 80%; */
