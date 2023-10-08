@@ -108,6 +108,42 @@ html{
   object-fit: cover;
 }
 
+/* --home-arrow-- */
+.miso_scorll {
+    position: absolute;
+    bottom: .26rem;
+    z-index: 100;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.miso_scorll .ico img{
+    display: block;
+    width: 3rem;
+}
+.miso_scorll .ico {
+    animation: index_tips_scroll 2s linear infinite;
+}
+@keyframes index_tips_scroll {
+    0% {
+        cy: 4;
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    45%,55% {
+        opacity: 1;
+        cy: 9;
+        transform: translateY(4px);
+    }
+
+    to {
+        cy: 14;
+        opacity: 0;
+        transform: translateY(0);
+    }
+}
+
 .content-introduction{
     max-width: 100%;
     margin: 0 auto;
