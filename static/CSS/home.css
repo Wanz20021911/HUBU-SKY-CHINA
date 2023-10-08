@@ -111,7 +111,7 @@ html{
 /* --home-arrow-- */
 .miso_scorll {
     position: absolute;
-    bottom: .26rem;
+    bottom: 1.26rem;
     z-index: 100;
     left: 50%;
     transform: translateX(-50%);
