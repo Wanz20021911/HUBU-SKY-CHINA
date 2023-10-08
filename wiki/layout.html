@@ -41,6 +41,19 @@
   <!-- Bootstrap Bundle with Popper -->
   <!-- <script src="{{ url_for('static', filename = 'bootstrap.bundle.min.js') }}"></script> -->
   <script>
+    //进度条
+    window.onload = function(){
+        function scrollFunc(){
+            let progress = document.querySelector('.top-progress');
+            let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+            let scrollHeight = document.documentElement.scrollHeight;
+            let clientHeight = document.documentElement.clientHeight;
+            progress.style.width = (scrollTop / (scrollHeight - clientHeight)).toFixed(2) * 100 + '%'
+        }
+        window.onscroll = scrollFunc
+        scrollFunc();
+    }
+    //nav
     window.addEventListener("scroll", function() {
         var navbar = document.querySelector("nav");
         navbar.classList.toggle("sticky",window.scrollY>50);
