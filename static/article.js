@@ -13,7 +13,7 @@ class dataScroll {
 		let Listdom = "";
 		districtName.forEach(item => {
 			let linkClass = item.querySelector(".data-tab")
-			Listdom += `<li><a data-tab=${item.getAttribute('data-tab')}>${linkClass.innerHTML}</a></li>`
+			Listdom += `<li><a data-tab=${item.getAttribute('data-tab')}><div>${linkClass.innerHTML}</div></a></li>`
 		})
 		directoryDom.innerHTML = Listdom
 		var Alist = directoryDom.querySelectorAll("li a")
