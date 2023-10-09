@@ -386,13 +386,10 @@ img {
 .chong_menu.active li{
     transform: rotate(calc(360deg/8*var(--i)));
 }
-.chong_menu .mImg li svg{
+.chong_menu .mImg li img{
     border-radius: 50%;
-    width: 30px;
-    /* height:100px; */
-    transform: rotate(calc(360deg/-8*var(--i)));/*一个负号，神奇
-    /* transform-origin: 220px; */
-    
+    width: 35px;
+    transform: rotate(calc(360deg/-8*var(--i)));
 }
 
 .chong_toggle{
@@ -406,7 +403,8 @@ img {
     transition: 1.2s ease-in-out;
 }
 .chong_toggle>img{
-    height: 120px;
+    height: 140px;
     -webkit-user-drag: none;
-    margin-top: 40px;
+    margin-top: 45px;
+    margin-left: 14px;
 }
