@@ -32,6 +32,7 @@ header{
         #009fd9, 
         rgb(174, 238, 236)
     );
+    z-index: 1;
 }
 nav{
     position: fixed;
