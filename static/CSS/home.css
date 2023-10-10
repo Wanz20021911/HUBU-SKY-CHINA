@@ -11,6 +11,10 @@ body{
 header{
     height: 45px!important;
 }
+p{
+    font-size:14px;
+    line-height:1.8em;
+}
 #timeline {
     width: 80%;
     flex: 0 0 auto;
