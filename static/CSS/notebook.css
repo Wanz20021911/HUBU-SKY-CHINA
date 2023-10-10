@@ -213,11 +213,6 @@
         color: var(--pblue);
         text-align: left;
     }
-    p{
-        color: var(--pblue);
-        font-size:14px;
-        line-height:1.8em;
-    }
     #progress-content-section .section-content {
         display:none;
         animation: FadeInUp 700ms ease 1;
