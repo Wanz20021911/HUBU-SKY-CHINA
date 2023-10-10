@@ -9,7 +9,7 @@ body{
     scroll-behavior: smooth;
 }
 header{
-    height: 45px!important;
+    height: 60px!important;
 }
 p{
     font-size:14px;
@@ -37,7 +37,6 @@ p{
     border-left: rgba(255, 255, 255, 0);
     float: right;
 }
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 
 :root{
     --header-font:"Kanit", sans-serif;
