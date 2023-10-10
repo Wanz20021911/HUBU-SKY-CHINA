@@ -156,3 +156,26 @@ table{
     content: '-';
     font-size: 30px;
 }
+
+.des{
+    display: flex;
+    flex-wrap: wrap;
+}
+.des div{
+    width: 50%!important;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.des p{
+    width: 50%!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.des div img{
+    margin: 0 auto;
+}
