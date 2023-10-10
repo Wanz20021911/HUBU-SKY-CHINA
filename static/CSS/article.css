@@ -69,8 +69,8 @@ table{
     outline: none;
     text-decoration: none;
     line-height: 30px;
-    margin-top: 5px;
     cursor: pointer;
+    font-size: 14px;
 }
 #category>.article-content{
     margin-left: 100px;
