@@ -9,11 +9,21 @@ body{
     scroll-behavior: smooth;
 }
 header{
-    height: 60px!important;
+    height: 68px!important;
 }
 p{
     font-size:14px;
     line-height:1.8em;
+}
+.screen{
+	margin-top:-68px;
+}
+#title{
+	width:100%;
+	position:absolute;
+	z-index:1;
+	text-align: center;
+	top:20%;
 }
 #timeline {
     width: 80%;
