@@ -1,12 +1,3 @@
-body,ul,li,a{
-    margin: 0px;
-    padding: 0px;
-    list-style:none;
-    text-decoration: none;				
-}/*取消所有表格的格式*/
-body{
-    background-color: #ffffff;
-}
 :root{
     --header-font:"Kanit", sans-serif;
     --body-font:"Helvetica Neue";
@@ -25,9 +16,7 @@ body{
     
     padding: 15px 25px;
 }
-header{
-    margin-bottom: -200px!important;
-}
+
 .heading{
     text-align: center;
     padding:1.5rem 0;
@@ -98,11 +87,7 @@ header{
     background-position: 100% 0px !important;
     border-radius: 50px !important;
 }
-/* .first>p>a{
-    color: #fff;
-    font-size:14px;
-    line-height:1em;
-} */
+
 /* --- Start progress bar --- */
 .process-wrapper {
     margin:auto;
