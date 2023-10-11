@@ -5,8 +5,24 @@ body,ul,li,a{
     text-decoration: none;				
 }/*取消所有表格的格式*/
 body{
-    background-color: #ffffff;
+    background-image: url(https://static.igem.wiki/teams/4927/wiki/home/background-bg.jpg);
+	/* background-color:#6f4e4e; */
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
     scroll-behavior: smooth;
+    scroll-padding-top: 90px;/*防止导航栏覆盖*/
+}
+.content-introduction::before{
+	content:"";
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color:rgb(255 255 255 / 55%);
+	transition:opacity.5s;
+	z-index:-1000;
 }
 header{
     height: 68px!important;
