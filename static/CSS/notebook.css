@@ -242,3 +242,39 @@
         transform:scale(0.8);
     }
 }
+
+#Table_2{
+    flex-direction: column;
+    max-width: 100%;
+    margin: 10px auto;
+    border-collapse: separate;
+    border: 3px solid #4d90ee;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #e6f9fc;
+
+}
+#Table_2 tr td{
+    height: 25px;
+    line-height: 25px;
+    border: 10px solid #e6f9fc;
+    resize: none;
+    overflow: auto;
+    text-align: center;
+    margin: 20px 20px;
+}
+#Table_2 tr:nth-child(1){
+    font-size: 18px;
+    line-height: 36px;
+    margin: 30px auto;
+    margin-bottom: 20px;
+    
+}
+#Table_2 tr:nth-child(1):hover{
+    background-color:#188fff00;
+}
+#Table_2 tr:hover{
+    background-color:#6daeeb73;
+    border-radius: 10px;
+}
+
