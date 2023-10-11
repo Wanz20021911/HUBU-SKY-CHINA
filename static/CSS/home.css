@@ -39,7 +39,8 @@ p{
 	position:absolute;
 	z-index:1;
 	text-align: center;
-	top:20%;
+	top:25%;
+	transform:scale(1.5);
 }
 #timeline {
     width: 80%;
