@@ -179,3 +179,81 @@ table{
 .des div img{
     margin: 0 auto;
 }
+
+.result_shui{
+    width: 100%;
+}
+.result{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shui{
+    width: 15%;
+    margin: 0 10px;
+    animation: floatup 1.5s ease-in-out infinite;
+}
+.shui:hover .shuiwen div p{
+    cursor: pointer;
+    animation: none;
+    transform: scale(1.6);
+    transition: 0.2s ease-in;
+}
+.shui:hover img{
+    transform: scale(1.2);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+.shui img{
+    width: 100%;
+    /* transform: scale(0.8); */
+    z-index: -1;  
+}
+.shuiwen{
+    width: 100%;
+    position: absolute;
+    top: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.shuiwen>p{
+    margin-top: -15px;
+    font-size: 14px;
+    font-weight: bolder;
+}
+.shuiwen>p:nth-child(1){
+    
+    font-size: 18px;
+    margin-bottom: -5px;
+}
+.shuiwen div p{
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 36px;
+    transform: scale(1.4);
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+@keyframes floatup {
+    0% {
+        transform: translateY(10px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+    
+    100% {
+        transform: translateY(10px);
+    }
+}
+.shui .kong{
+    height:100px;
+}
