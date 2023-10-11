@@ -176,7 +176,7 @@ html{
 .content-introduction{
     max-width: 100%;
     margin: 0 auto;
-    margin-top: 160px;
+    /* margin-top: 160px; */
 }
 .introduction{
     /* width: 100%;*/
