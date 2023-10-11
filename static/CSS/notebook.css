@@ -16,7 +16,9 @@
     
     padding: 15px 25px;
 }
-
+#title .heading span{
+    background:#504e4aad!important;
+}
 .heading{
     text-align: center;
     padding:1.5rem 0;
