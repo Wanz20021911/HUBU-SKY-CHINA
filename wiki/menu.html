@@ -43,8 +43,8 @@
               <li><a class="dropdown-item" href="{{ url_for('pages', page='engineering') }}">Engineering</a></li>
               <li><a class="dropdown-item" href="{{ url_for('pages', page='experiments') }}">Experiments</a></li>
               <li><a class="dropdown-item" href="{{ url_for('pages', page='notebook') }}">Notebook</a></li>
-              <li><a class="dropdown-item" href="{{ url_for('pages', page='model') }}">Model</a></li>
               <li><a class="dropdown-item" href="{{ url_for('pages', page='results') }}">Results</a></li>
+              <li><a class="dropdown-item" href="{{ url_for('pages', page='model') }}">Model</a></li>
               <li><a class="dropdown-item" href="{{ url_for('pages', page='safety') }}">Safety</a></li>
             </ul>
           </div>
@@ -93,11 +93,11 @@
         <img id="arrows" src={{ url_for('static', filename = 'img/menu.svg') }}></img>
         <div>
           <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Team</a></li>
+            <li><a href="{{ url_for('pages', page='home') }}">Home</a></li>
+            <li><a href="{{ url_for('pages', page='team') }}">Team</a></li>
             <li><a href="">Project</a></li>
-            <li><a href="">Safety</a></li>
-            <li><a href="">Human Practices</a></li>
+            <li><a href="{{ url_for('pages', page='safety') }}">Safety</a></li>
+            <li><a href="{{ url_for('pages', page='human-practices') }}">Human Practices</a></li>
             <li><a href="">Awards</a></li>
           </ul>
         </div>
