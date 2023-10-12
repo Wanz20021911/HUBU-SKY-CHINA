@@ -1,24 +1,3 @@
-body,ul,li,a{
-    margin: 0px;
-    padding: 0px;
-    list-style:none;
-    text-decoration: none;				
-}/*取消所有表格的格式*/
-body{
-    background-color: #ffffff;
-}
-:root{
-    --header-font:"Kanit", sans-serif;
-    --body-font:"Helvetica Neue";
-    --pblue:#4154CD; 
-    --bblue:#3980FE; 
-    --sblue:#63A6F7; 
-    --lblue:#59CEFF;
-    --orange:#ff8e3a;
-    --cyan:#5FCAC8;
-}
-
-
 .engineering-wrapper {
     margin:auto;
     /* max-width:1080px; */
