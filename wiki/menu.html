@@ -8,11 +8,6 @@
       <img src="{{ url_for('static', filename = 'img/logo1.svg') }}"></img>
     </div>
 
-    <!-- -- SMALL SCREEN MENU ICON --
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button> -->
-
     <div class="top_center">
       <ul>
         <!---- HOME ---->
@@ -60,6 +55,18 @@
           <a class="nav-link" href="{{ url_for('pages', page='part') }}">Part</a>
         </li>
 
+        <li>
+          <a class="nav-link dropdown-toggle" href="{{ url_for('pages', page='team') }}" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Education<img id="arrows" src={{ url_for('static', filename = 'img/arrow_down.svg') }}></img>
+          </a>
+          <div class="dropdown-content">
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="{{ url_for('pages', page='education') }}">Education</a>
+              <li><a class="dropdown-item" href="{{ url_for('pages', page='communication') }}">Communication</a></li>
+            </ul>
+          </div>
+        </li>
+
         <!---- EDUCATION ---->
         <li class="nav-item">
           <a class="nav-link" href="{{ url_for('pages', page='education') }}">Education</a>
@@ -95,10 +102,10 @@
           <ul>
             <li><a href="{{ url_for('pages', page='home') }}">Home</a></li>
             <li><a href="{{ url_for('pages', page='team') }}">Team</a></li>
-            <li><a href="">Project</a></li>
+            <li><a href="{{ url_for('pages', page='part') }}">Part</a></li>
             <li><a href="{{ url_for('pages', page='safety') }}">Safety</a></li>
             <li><a href="{{ url_for('pages', page='human-practices') }}">Human Practices</a></li>
-            <li><a href="">Awards</a></li>
+            <!-- <li><a href="">Awards</a></li> -->
           </ul>
         </div>
       </div>
